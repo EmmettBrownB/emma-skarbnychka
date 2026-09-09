@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Зоряна скарбничка Емми</title>
+<meta name="theme-color" content="#0F1642">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Скарбничка Емми">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAFUklEQVR4nO3dTW4UMRRFYRMxRIIREyRGsA0GrIS1Zh2MsgIiZQEMClVCd3VXla9/3rXPtwDksk9em04neffl+68E5HrovQB4IyBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIkve9F3Dp5fmp9xKi+/Dxa+8lvOofEMWc9XbHusfULSC6KWLdxl4ldQiIdGroVVLTgEingWWTm2XUKCDSaaxZRtUDIp2OGmRU930g6omg6inUmkCkE0q9UVRlAlFPTDXOpXxA1BNZ8dMpHBD1xFf2jEoGRD0uCp5UsYCox0up8yoTEPU4KnJqBQKiHl/62akBUY878QSlgKhnDMo58pFWSPIDYvyMJPs0MwOinvHknSkvYZDkBMT4GVXGyTKBIDkdEONnbGfPlwkEybmAGD8zOHXKTCBITgTE+JnH8bNmAkFCQJAcDYjXr9kcPHEmECROAf15/NZ7CS14PWb/XzB1yrK5n3787r2QKrzSWThNoLUbx43etT6U15fHoQkU8AY90igK+/Xw8vy0++P0ThPoWtitP879EczuQNd8R5F7OguzCXQrFLvDuLVgu68E+wm0chlFdq3fZzaBdgU/nuDLyzDOBFrFHEXjpbPwm0AHy/jz+C3OmR1cSbToj/AL6JTuDYXquIbBA0pdj3DsdBaWAWWM+sZnmVGt4+tXMg0oT7NRNMPgWU0U0KLq6Q5/47k2XUCp2jHPls7CNSD9xlAwI/2fMr0AJd+AStEbmnPwrAZ8J/qs7HeuJ09nMfsEWp2tgXoWxgEVvzccvMoUv4P7XoCSdUCV3I+DwXOBO9CGzVsR6WzynkBVh//bYurVY/36lZhA9zF1dnlPIHRHQJDYB2R9h7Be/MI+IPRFQJAQECQjBGR6kzBd9oURAkJHBATJIAHZvRzYLfiWQQJCLwQECQFBMk5ARrcKo6XuGicgdEFAkBAQJEMFZHG3sFjkcUMFhPaGCsjiI8wWizxunICMDsZoqbtG+KkMx/OI+atkM9hPIMd6VtaLX3gHNMABuD+CcUDuW7+yfhDLO5D1jm/yvRL5TaDx6lk5PppZQI5bfIrdAzoFZLe5ebwe0+MO5LWnOpcr0cvzk8EEmq2eVfAHX/4Uc/SAgm9ibfEfP3RA8bevgZibsP4l+KB3oJi71ku0K9FaT4o5gahnU5BteVtPChhQkG2KqfvmXNSTogXUfYPi67hF1/WkOHcg0jmuy5Vos54UZAJRT4Ygm9Y/oCAb4ajZ1t0aP6l7QNQjarCBd+pJHe9ApFNK1SvR/XpSrwlEPcX12tIOAVFPJV02tnVA1FNV++1tdwcinTYav0vUaAJRT2PNNrxFQNTTRZttb/ESVmSczlZhnA9v3Bfle2G7jCp0Ofsi+n8rA9bmCqjBbJhq/KTZAkJxBFTSbOMnTRjQhGdc1XQBoawZA6o0hOacbTMGhIIIqIw5x0+aNqBpz7u4SQNCKQRUwMzz7GH3U9OjmvnUC3pIKb08P02bkW7yEF9fwiZsaPKzL+K/OxCjCGdtXKLJ6Dhm2M3/hU2SEQWIdj7SOkND2Ygv8T4QRATEIJEQUCayWxBQStQgICBICCgHE2tFQP/QRB4COo3U3iIgSAjoFaMlAwGdQ2QXCOg/9HEWAZ1AXtcICBICusSYOYWAjiKsTQQECQFtuB42jJ9bCAgSAtrGyDmIgPYR0x0EBAkB3bQMHsbPfQQEybuPn3/2XgOMMYEgISBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAiSv19vBuLaHzLXAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFCElEQVR4nO3dTW4UOxSGYQcxRAojJkiMYBsMWAlrzToYZQVEygIYVFQK3X2qXf49n8/7LIDrst+cci4t+uHrj98JuOXD7AXAL+KAiThgIg6YiAMm4oCJOGAiDpiIAybigOnj7AW8eX15nr0EXz49fpu9hHlxUMOx9/szK5TRcdBEgX3TBlcyLg6yqDe4khFxkEVz25b2TqRvHGTRVe9Eev0q+/ryTBlj9NvnLnGQxWCdfhTbx0EZszTf+ZZ3DrKYru0tpNnkoAw/Wp1Fmzgow5smJ9IgDsrwqf5cauOgDM8qT6cqDsrwr+aM+DwHTOVxMDZUFJ9UYRyUoaXsvErioAxFBafGnQOm03EwNnSdPTsmB0zn4mBsqDt1gkwOmE7EwdhYQ/45Mjlgyo2DsbGSzNNkcsBEHDBlxcE7ZT05Z8rkgEkgjr9P32cvoT2JhxKII4lsZT6VxxGI4/PPPymlv0/fVfb0wP4U20M5dz8OV7dR6T68Lf7uyXr5Z5/yCf3k7bxlkUngtXKT0HYLLfWCRhw354T/W4i1QpWxpxHHAbd9uF1YPr07xzVvt5AFstjIT46dkyNxsowmZOLIGQxzbyGZ/3U/E+4umTjyTeljpYGxWzCONHyELFlGWjWOzYAz8//rdA2lOAre1l0Pr+BPFrpwJK04ijXvY+2BsQsRR2p6nBGy2IjFUTmWK8+1sjCtd0qSi6Ne8QHHGRi7cHFsTp10kBvGtaBxpOwjj5nFRi+Otm/ug7NvOzDkLhxJMY7mbkYQeWDsiOPNXkPYG8a1FT7P0QpNXJCcHHLvb7kFbyTjwBjEAZNqHEKDWmipF1TjwADEARNxwCQch8S7XGKRFuE40BtxwEQcMGnH4fyN7nx5d2nHga6IAybigEk+DrfvdbcLyycfB/qRj8Ptx7fcLiyf8McE/e++t3+P6izVyeG/jJ3QUi9IxiG33XIL3ujFIbrRistWunMo7u97clcQmcmhXsZO6EE04hDa0BwqjyMQh8pWniLxUK7vHBI7WMz/FcTv5Fi7jJ3bx3x9eXYah9st68Htw3qMw+1m9ePtkbdv+PJ15/C2RyP5uYLs3/3maHJELmM3fRPefyuglzimb4ofE7fi4vsiXcRBGRembMj1N4lOvnOQhcXDFWTm5KCMu4Zt0c0vIJ4WB2VkGrBR1ldTz4mDMk7pul0HX1o++s5BFmU6XUGOv85+6OSgjEqDN3BcHJTRxMhtHBQHZTQ0bDO73znIoocx/xek7+SgjK56b2/fyVGf9tp5efg72AO+/sr+2txv/LvL+elWcvEXb/Bp8Ti6/mSvPTbS8nGgBnEUWn5spAhxRDjFTtaPA8VCxNF8eASZRiHiQBniOC3I2Ehx4ohzog1FiQMFiOOcUBMoUByhzrWJD68vz8efMkVYb5ODRHJEmz3/vVaWTyTa6Va6cedYu49iAcO6fSFdeIQEPONiRx8TXLUPZAr0q2yNmPMmYhwxT7pAxDjOChsTccAUNI6ww+CUoHHki5xR3Dgin3qmuHHkCB4QccAUOo7gg+Gu0HEcIx3igCl6HIyHA9HjsBBNIg4cII4bQ4KxsSEOmIgjJUaFgTguEcqOOGAijjfbwGBsvEccMD08fvk1ew1wiskBE3HARBwwEQdMxAETccBEHDARB0zEARNxwEQcMBEHTMQBE3HARBwwEQdMxAETccBEHDARB0zEARNxwEQcMBEHTMQB0z9wBPJ9nscwkQAAAABJRU5ErkJggg==">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogItCX0L7RgNGP0L3QsCDRgdC60LDRgNCx0L3QuNGH0LrQsCDQldC80LzQuCIsICJzaG9ydF9uYW1lIjogItCh0LrQsNGA0LHQvdC40YfQutCwIiwgInN0YXJ0X3VybCI6ICIuIiwgInNjb3BlIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwgImJhY2tncm91bmRfY29sb3IiOiAiIzBGMTY0MiIsICJ0aGVtZV9jb2xvciI6ICIjMEYxNjQyIiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBSUFBQURkdnZ0UUFBQUZVa2xFUVZSNG5PM2RUVzRVTVJSRllSTXhSSUlSRXlSR3NBMEdySVMxWmgyTXNnSWlaUUVNQ2xWQ2QzVlhsYTkvM3JYUHR3RGtzazllbTA0bmVmZmwrNjhFNUhyb3ZRQjRJeUJJQ0FnU0FvS0VnQ0FoSUVnSUNCSUNnb1NBSUNFZ1NBZ0lrdmU5RjNEcDVmbXA5eEtpKy9EeGErOGx2T29mRU1XYzlYYkh1c2ZVTFNDNktXTGR4bDRsZFFpSWRHcm9WVkxUZ0VpbmdXV1RtMlhVS0NEU2FheFpSdFVESXAyT0dtUlU5MzBnNm9tZzZpblVta0NrRTBxOVVWUmxBbEZQVERYT3BYeEExQk5aOGRNcEhCRDF4RmYyakVvR1JEMHVDcDVVc1lDb3gwdXA4eW9URVBVNEtuSnFCUUtpSGwvNjJha0JVWTg3OFFTbGdLaG5ETW81OHBGV1NQSURZdnlNSlBzME13T2ludkhrblNrdllaRGtCTVQ0R1ZYR3lUS0JJRGtkRU9ObmJHZlBsd2tFeWJtQUdEOHpPSFhLVENCSVRnVEUrSm5IOGJObUFrRkNRSkFjRFlqWHI5a2NQSEVtRUNST0FmMTUvTlo3Q1MxNFBXYi9YekIxeXJLNW4zNzg3cjJRS3J6U1dUaE5vTFVieDQzZXRUNlUxNWZIb1FrVThBWTkwaWdLKy9Ydzh2eTArK1AwVGhQb1d0aXRQODc5RWN6dVFOZDhSNUY3T2d1ekNYUXJGTHZEdUxWZ3U2OEUrd20wY2hsRmRxM2ZaemFCZGdVL251REx5ekRPQkZyRkhFWGpwYlB3bTBBSHkvanorQzNPbVIxY1NiVG9qL0FMNkpUdURZWHF1SWJCQTBwZGozRHNkQmFXQVdXTStzWm5tVkd0NCt0WE1nMG9UN05STk1QZ1dVMFUwS0xxNlE1LzQ3azJYVUNwMmpIUGxzN0NOU0Q5eGxBd0kvMmZNcjBBSmQrQVN0RWJtblB3ckFaOEovcXM3SGV1SjA5bk1mc0VXcDJ0Z1hvV3hnRVZ2emNjdk1vVXY0UDdYb0NTZFVDVjNJK0R3WE9CTzlDR3pWc1I2V3p5bmtCVmgvL2JZdXJWWS8zNmxaaEE5ekYxZG5sUElIUkhRSkRZQjJSOWg3QmUvTUkrSVBSRlFKQVFFQ1FqQkdSNmt6QmQ5b1VSQWtKSEJBVEpJQUhadlJ6WUxmaVdRUUpDTHdRRUNRRkJNazVBUnJjS282WHVHaWNnZEVGQWtCQVFKRU1GWkhHM3NGamtjVU1GaFBhR0NzamlJOHdXaXp4dW5JQ01Ec1pvcWJ0RytLa014L09JK2F0a005aFBJTWQ2VnRhTFgzZ0hOTUFCdUQrQ2NVRHVXNyt5ZmhETE81RDFqbS95dlJMNVRhRHg2bGs1UHBwWlFJNWJmSXJkQXpvRlpMZTVlYndlMCtNTzVMV25PcGNyMGN2ems4RUVtcTJlVmZBSFgvNFVjL1NBZ205aWJmRWZQM1JBOGJldmdaaWJzUDRsK0tCM29KaTcxa3UwSzlGYVQ0bzVnYWhuVTVCdGVWdFBDaGhRa0cyS3Fmdm1YTlNUb2dYVWZZUGk2N2hGMS9Xa09IY2cwam11eTVWb3M1NFVaQUpSVDRZZ205WS9vQ0FiNGFqWjF0MGFQNmw3UU5RamFyQ0JkK3BKSGU5QXBGTksxU3ZSL1hwU3J3bEVQY1gxMnRJT0FWRlBKVjAydG5WQTFGTlYrKzF0ZHdjaW5UWWF2MHZVYUFKUlQyUE5OcnhGUU5UVFJadHRiL0VTVm1TY3psWmhuQTl2M0JmbGUyRzdqQ3AwT2ZzaStuOHJBOWJtQ3FqQmJKaHEvS1RaQWtKeEJGVFNiT01uVFJqUWhHZGMxWFFCb2F3WkE2bzBoT2FjYlRNR2hJSUlxSXc1eDArYU5xQnB6N3U0U1FOQ0tRUlV3TXp6N0dIM1U5T2ptdm5VQzNwSUtiMDhQMDJia1c3eUVGOWZ3aVpzYVBLekwrSy9PeENqQ0dkdFhLTEo2RGhtMk0zL2hVMlNFUVdJZGo3U09rTkQyWWd2OFQ0UVJBVEVJSkVRVUNheVd4QlFTdFFnSUNCSUNDZ0hFMnRGUVAvUVJCNENPbzNVM2lJZ1NBam9GYU1sQXdHZFEyUVhDT2cvOUhFV0FaMUFYdGNJQ0JJQ3VzU1lPWVdBamlLc1RRUUVDUUZ0dUI0MmpKOWJDQWdTQXRyR3lEbUlnUFlSMHgwRUJBa0IzYlFNSHNiUGZRUUV5YnVQbjMvMlhnT01NWUVnSVNCSUNBZ1NBb0tFZ0NBaElFZ0lDQklDZ29TQUlDRWdTQWdJRWdLQ2hJQWdJU0JJQ0FnU0FvS0VnQ0FoSUVnSUNCSUNnb1NBSUNFZ1NBZ0lFZ0tDaElBZ0lTQklDQWlTdjE5dkJ1TGFIekxYQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBSUFBQUI3R2tPdEFBQVBuRWxFUVZSNG5PM2RQWkljU1hhRjBaaXhGbWsybEtqUWJLVG1OaWh3SlZ4cnIyTWtyS0JoaGdXTVVHMkZRbFpsWm1UOHViOTN6NUZhek14d2YxOTRCSUQrMjMvL3ovOHZBT1Q1KytnUEFNQVlBZ0FRU2dBQVFna0FRQ2dCQUFnbEFBQ2hCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaGZodjlBZmpGaisvZlJuOEVPTkYvL09PZm96OENQd25BTUdZOWdlNHRlMkVZUWdBdVl0ekRBemNiUkErdUlRQW5NdlJobTQ5N1J3ek9Jd0RITS9maFFHSndIZ0U0aHFFUEYzamZhRXB3Q0FIWXhkeUhJWlRnRUFLd2tkRVBNMUNDUFFUZ05lWSt6RWtKTmhDQXRZeCtLT0Z0cThyQUdnTHduTkVQNWNqQUdnSndsN2tQMWNuQVl3THdCYU1mT3BHQmUveHJvTGRNZjJqcHgvZHZkdmNOSjRDZkxBNW96Mm5nSXdGWUZxTWZ3c2pBbS9SSFFFNkZFTXZlanc2QXl3L2h3bThCUXg4QkpWOXk0RWJzRTZIRUU0RHBEM3dXT0JteVRnQ0JGeGhZTCswb0VIUUNNUDJCTlhKbVJVb0FjcTRvc0YvSXhPai9DQ2prUWdMSFNuZ2MxUHdFWVBvRGUvU2VJWjBEMFB2S0FkZG9QRWw2QmlEOEwzY0F4K282VHhvR29PdWxBZ1pxZVZ2WkxRRDlyaEF3ajJZVHBsVUFtbDBiWUVLZDVreWZBSFM2S3NETTJreWJKZ0ZvY3oyQUVuck1uQTRCNkhFbGdGb2FUSjd5QVdod0RZQ2lxcytmMmdHby91c0QxWldlUW9VRFVQcDNCOXFvTzR1cUJxRHVMdzcwVTNRaWxReEEwZDhhYUt6aVhLb1hnSXEvTXBDZzNIUXFGb0J5dnk4UXBkYU1xaFNBV3I4c3dPUXFCUUJnZm9WdVZjc0VvTkJ2Q29Tck1xOXFCS0RLcndud3BzVFVLaENBRXI4andJMzVaMWVCQUFCd2h0a0RNSDlDQWU2WmZJSk5IWURKZnp1QXAyYWVZL01HWU9aZkRXQzlhYWZadkFFQTRGU1RCbURhWUFKc01PZE1tekVBYy81U0FIdE1PTmxtREFBQUY1Z3VBQk5HRXVBUXM4MjN1UUl3MjY4RGNLeXBwdHhjQVFEZ01oTUZZS293QXB4a25sazNVUUFBdU5Jc0FaZ25pUUJubTJUaXpSSUFBQzQyUlFBbWlTSEFaV2FZZStNRE1NT3ZBQkJvZkFBQU1nMi8vUjBjZ09IZkh5Q1dFd0RBTUdOdmdnVUFJTlRJQUhqK0F6QndFam9CQUlRYUZnQzMvd0J2UnMxREp3Q0FVR01DNFBZZjRLTWhVOUVKQUNDVUFBQ0VHaEFBejM4QVBydCtOam9CQUlTNk9nQnUvd0h1dVhoQ09nRUFoQklBZ0ZDWEJzRHpINERIcnB5VFRnQUFvUVFBSUpRQUFJUzZMZ0JlQUFDc2NkbTBkQUlBQ0NVQUFLRXVDb0RuUHdEclhUTXpuUUFBUWdrQVFDZ0JBQWgxUlFDOEFMakduMy84UHZvajBKOWxkcGtMSnFjVFFDdC8vdkc3L2NsNXJLNW1CS0NQLy96ZmY3MzloMTNLNGQ3dkxkNlhHUTBJUUUrT0FoeklXdXBLQURxemI5bkpuVVJ2QXRDY0RjeG1WazU3cHdmQUh3RzYwcjNuczNZeUw3bDMzK0FGd01YT25wOU9BQ2tjQlZqSk9za2hBRm5zYlI1d2w1QkdBTHA1ZWtpM3lmblMwMVhoK1U4L0FoQktBM2pubmlDV0FPU3k3Vm5jQ21RVGdIVDJmeXgzQUp3YkFIOEdkSWhYbjlVYUJJRmV2ZUplQUl4eTZoUjFBdUF2R2hCQzcza25BUHhrTkxUbit2S1JBSERMakdoSjNmbE1BSHJhK2NUV3NHaG01OVgwQXFBckFlQXVEV2hBeTNsQUFIakUrQ2pOdGVNeEFXanJ3R083T1ZMT2dlWDIvS2N4QVdBVlI0RkNYQ2xXRWdCZVlMSk1UcWQ1aVFEd0dpTm1XcTRMcnhLQXpzNTdlbXZXVE9XOEtuc0IwSnNBc0pHandDUmNCVFlUQUhZeGZRYlNZSFlTZ09ZdU9NSWJRME5jOEp0Ny90T2VBSEFNRGJpTTRuSVVBZUF3QnRNRi9NSWNTQUE0bUFsMUVuM2xjQUxRMy9WUGNvMnF3MTMvZTNvQmtFQUFPSXNHSEVKTk9ZOEFjQ0xEYXllL0hxY1NnQWhqai9PbTJBWmoyK241VHdnQjRBcU9BaS94VzNHTjMwWi9BSUs4elRWM2x3OFkvVnpKQ1lDcm1YSDMrR1c0bUFDa21PcSsyeE9oRzFQOUlGTXRGVTRsQUF3eno4Z2J5Ky9BS040Qk1GTDRXd0dqbjdHY0FCZ3ZjdzVtZm11bUlnQkJacjdSbnVvaCtObG0vckl6THhJT0p3Qk1aTnF4ZUtDRTcwZ1YzZ0V3bDhadkJZeCtadU1Fa0tYS1lPMDNLMHQ4b3lyTGc2TTRBVENwTmtlQkVxT2ZURTRBVEszNjlLeisrZW5OQ1lEWkZUMEtHUDNNendrZ1RybEorcWJXUEszMWFkOFVYUmpzNFFSQUdTV09BaFZIUDdHY0FDaG01Z2s3ODJlRHp3UWcwZVEzMFU5TitEZHBKL3hJTDZtK0pOaEdBS2hxbm9FN3p5ZUJsM2dIUUdIRDN3b1kvWlRtQkVCNW82YXc2VTkxQWhDcTJUUGZpeC9CVjMvaWY2UFpZbUE5QWFDUGE0WnlwOUZQT084QWFPWFV0d0pHUDgwNEFlUnFmUEEvWTFKM25mNk5sd0ZQT1FIUTA0RkhnYTZqSDV3QTZHei83RGI5YWN3SmdPWTJId1dNZnRwekFvaVc4L3ozMVdrZU12MXpGZ0JmY2dJZ3hjcWpRTWpvaDhVSmdEU1A1N3ZwVHhRbkFPSjhlUlF3K2dua0JKQXU5aW53eDRtZk9mMWpMejN2bkFESWxUbjM0WjBUQUVBb0FjQ2pnRVF1T29zQUFNUVNBSUJRQWdBUVNnQllGaytFdzdqY3ZCRUFnRkFDQUJCS0FQaUx4d0loWEdqZUNRQkFLQUVBQ0NVQUFLRUVnSjg4SFc3UEplWWpBUUFJSlFBQW9RUUFJSlFBOEF2UGlCdHpjYmtoQUFDaEJBQWdsQUJ3eTRPQ2xseFdQaE1BZ0ZBQ0FCQktBQUJDQ1FCZjhMeTRHUmVVTHdrQVFDZ0JBQWdsQUh6TlE0TTJYRXJ1RVFDQVVBSUFFRW9BQUVJSkFIZDVkdHlBaThnREFnQVFTZ0FBUWdrQWozaUFVSnJMeDJNQ0FCQktBQUJDQ1FCQUtBSGdDYytSaTNMaGVFb0FBRUlKQUVBb0FRQUlKUUE4NTJseU9TNFphd2dBUUNnQkFBZ2xBS3ppa1VJaExoWXJDUUJBS0FFQUNDVUFBS0VFZ0xVOFdTN0JaV0k5QVFBSUpRQ3M5ZWNmdjQvK0NEem5NckhlYjZNL0FBV1lLYlc4WFMvUGduaktDWUFuVFAraVhEaWVFZ0FlTVVSS2MvbDRUQUM0eS9ob3dFWGtBZThBK0lLcDBZbFhBdHpqQk1BdDA3OGxsNVhQQklCZkdCT051YmpjRUFCK01pRGFjNG41eURzQWxzVmNTT0tWQU8rY0FERDlFN25vTEFLQVFSRExwVWNBb2hrQjRTeUFjTjRCaExMemVlT1ZRREluZ0VTbVB6Y3NpVXdDRU1kVzUwc1dSaUFCeUdLVDg0RGxrY1k3Z0JUMk5tdDRKUkRGQ1NDQzZjOUxMSmdRQXRDZnpjd0dsazBDajRBNnM0Zlp3K09nOXB3QTJqTDlPWVNGMUpnQTlHVFRjaURMcVNzQmFNaDI1WEFXVlV2ZUFiUmlsM0llcndTYStmSDlteE5BSDZZL0Y3RE1ldmp4L2R2aUVWQWJ0aVdYc2RqYUVJQU9iRWd1WnNtVjluYjd2M2dIVUoxOXlDaGVDUlQxUHYwWEo0RFNUSCtHc3docitUajlGd0dveThaakVwWmlYUUpRa2kzSFZDeklFbTV1L3hmdkFNcXgwNWlUVndLVCt6ejlGeWVBV2t4L0ptZUp6dW5MNmI4SVFDRzJGaVZZcUxPNU4vMFhBYWpDcHFJUXk3VUs3d0JtWnk5UmtWY0NrM2h3Kzc4NEFVek85S2MwQzNpc3g5Ti9FWUNaMlR3MFlCbVA4blQ2THg0QnpjbWVvUk9QZzZibEJEQWQwNStXTE93cnJibjlYd1JnTmpZSmpWbmUxMWc1L1JjQm1JcnRRWHNXK2RuV1QvL0ZPNEJKMkJYazhFcmdQQzlOLzhVSllBYW1QNEVzKzhPOU92MFhBUmpPTmlDV3hYK2dEZE4vRVlDeGJBREMyUUpqZVFjd2huVVBiN3dTMkcvYjdmL2lCRENFNlE4M2JJck5Oay8vUlFDdVo2SERsMnlORGZaTS8wVUFMbWFKd3dNMnlFdDJUdi9GTzRETFdObXdobGNDSysyZi9vc1R3RFZNZjNpSkxmUFlJZE4vRVlBTFdNcXdnWTF6ejFIVGZ4R0FzMW5Fc0pudDg5bUIwMy94RHVBODFpN3M1NVhBcVp3QVRtSDZ3NEZzcURmSDN2NHZBbkFHaXhVT1oxc2RQdjBYajRDT1pZM0NlWklmQjUweC9SY25nQU9aL25DQndJMTIwdlJmQk9Bb2dZc1NSckhkamlJQUI3QWM0V0kyM1NHOEE5akZLb1JSa2w4SkhNVUpZRHZUSDRhekRmY1FnSTBzTzVpRXpiaVpBR3hod2NGVWJNbHR2QU40alhVR2MvSktZQU1uZ0JlWS9qQTVtL1FsQXJDV2hRVWwyS3JyQ2NBcWxoUVVZc091NUIzQUUxWVNWT1NWd0JwT0FJK1kvbENhTGZ5WUFOeGw2VUFETnZJREF2QTFpd2Jhc0ozdjhRN2dsclVDL1hnbDhDVW5nRitZL3RDWURYN0RDZUFYTzI4UUxDODRtN3Y0QXduQWtmWXNUZkVnaHlFK0NRR1loY01IaFpqZ1BRaEFFdzRmdk1vUVJ3QncrS2pLQkdjbkFXQXZoNDg5REhFRzhzZEFBVUlKQUNPRjMvK0dmMzJHRXdDQVVBSUFFRW9BR0N6Mk1VanNGMmNlQWdBUVNnQVlML0JlT1BBck15RUJBQWdsQUFDaEJJQXBSRDBTaWZxeXpFd0FBRUlKQUVBb0FXQVdJUTlHUXI0bUpRZ0FRQ2dCZ091NC9XY3FBc0JFekVlNGtnQUFoQklBNXRMNEVORDRxMUdVQUFDRUVnQ0FVQUxBZEZvK0ttbjVwYWhPQUFCQ0NRQ2N6dTAvY3hJQVptUml3Z1VFQUNDVUFNQzVuR2FZbGdBd0tYTVR6aVlBQUtFRWdIazFPQVEwK0FvMEpnQUFvUVFBenVMMm44a0pBRk16UStFOEFnQVFTZ0RnRk00dXpPL3ZQNzUvKy9IOTIraVBBWGVacEhDU3YwNEFHZ0NRNXVjaklFY0JwbFh1RUZEdUE1UHA5aDJBREFDRStQb2xzQXpBWm03L3FlTFJud0xTQU9aaHFzTGhudnd4VUVjQmdLNVcvVDBBR1lDVm5GUW81SVcvQ0NZRGpHVzJ3ckZlL3B2QU1nRFF3OFovQ2tJRzRETm5GR3JaOVc4QnlRQVhNMkhoUUFmOFkzQXlBSXM0VWRCaC94cW9ESEFOY3hhT2N2QS9CeTBEQUZXYzh2OERrQUhTT0pkUTBZbi9ReGdONENTbUxSekMveEVNSUpRQXdGNU9KQlFsQUpSazVzSitBZ0M3U0JGMUNRQkFLQUdnS3JmZXNKTUF3SFlpUkdrQ1FHSG1MK3doQUFDaEJBQTJjdjZnT2dHZ05sTVlOaE1BMkVKNGFFQUFBRUlKQU9XNUdZZHRCQUJlSmpuMElBQUFvUVNBRHR5U3d3WUNBSzhSRzlvUUFKb3dsK0ZWQWdBdmtCazZFUUNBVUFKQUgyN1A0U1VDQUdzSkRNMElBRUFvQWFBVk4rbXduZ0RBS3RKQ1B3SUFFRW9BNk9hTVczVzMvN1FrQUFDaEJJQ0czTERER2dJQVQ4Z0pYUWtBUUNnQm9DZTM3ZkNVQU1BalFrSmpBZ0FRU2dCb2EvL051OXQvZWhNQWdGQUNRR2R1NGVFQkFZQ3ZpUWZ0Q1FCQUtBR2dPVGZ5Y0k4QXdCZGtnd1FDQUJCS0FPanYxZHQ1dC8rRUVBQ0FVQUlBRUVvQWlMRCtxWTduUCtRUUFJQlFBa0FLdC9ad1F3RGdKNUVnaWdBQWhCSUFnankrd1hmN1R4b0JBQWdsQUFDaEJJQXM5NTd6ZVA1RElBRUFDQ1VBQUtFRWdEaWZuL1o0L2tNbUFRQUlKUUFrK25qTDcvYWZXQUlBRUVvQUFFSUpBS0hlbnZ4NC9rTXlBUUFJOWJkLy9OZi9qZjRNQUF6Z0JBQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkJLQUFCQ0NRQkFLQUVBQ0NVQUFLRUVBQ0NVQUFDRUVnQ0FVQUlBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBZ2xBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDQ1VBQUtFRUFDQ1VBQUNFRWdDQVVBSUFFRW9BQUVJSkFFQW9BUUFJSlFBQW9RUUFJSlFBQUlRU0FJQlFBZ0FRU2dBQVFna0FRQ2dCQUFnbEFBQ2hCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFLaC9BeDFHZ2dDU0ovYmVBQUFBQUVsRlRrU3VRbUNDIiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root{
+    --sky:#0F1642;
+    --sky2:#1B2560;
+    --parchment:#FFF8EC;
+    --parchment-edge:#F2E6CE;
+    --ink:#2B2440;
+    --ink-soft:#5B5478;
+    --gold:#FFD866;
+
+    --c-blue:#4FC3E8;    --c-blue-dk:#1E88B8;
+    --c-pink:#FF6FA5;    --c-pink-dk:#D6467E;
+    --c-yellow:#FFC93C;  --c-yellow-dk:#E0A800;
+    --c-red:#FF5A5F;     --c-red-dk:#D6393E;
+    --c-purple:#9B6BFF;  --c-purple-dk:#7442E0;
+    --c-brown:#C99356;   --c-brown-dk:#8B5E3C;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    min-height:100vh;
+    background:
+      radial-gradient(1200px 600px at 15% -10%, #232C6B 0%, transparent 60%),
+      radial-gradient(900px 500px at 90% 0%, #2B1F5E 0%, transparent 55%),
+      linear-gradient(180deg, var(--sky) 0%, var(--sky2) 100%);
+    font-family:'Nunito', sans-serif;
+    color:var(--ink);
+    position:relative;
+    overflow-x:hidden;
+    padding-bottom:60px;
+  }
+
+  /* twinkling background stars */
+  #bgstars{position:fixed; inset:0; z-index:0; pointer-events:none;}
+  .bgstar{position:absolute; background:#fff; border-radius:50%; opacity:.6; animation:twinkle 3.2s ease-in-out infinite;}
+  @keyframes twinkle{0%,100%{opacity:.15;} 50%{opacity:.85;}}
+
+  .wrap{position:relative; z-index:1; max-width:1080px; margin:0 auto; padding:36px 20px 0;}
+
+  header{text-align:center; margin-bottom:28px;}
+  .eyebrow-star{font-size:34px; display:block; margin-bottom:4px;}
+  h1{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:800;
+    font-size:clamp(30px, 5vw, 46px);
+    color:#fff;
+    margin:0 0 8px;
+    letter-spacing:.3px;
+    text-shadow:0 2px 18px rgba(155,107,255,.45);
+  }
+  header p{
+    color:#C7CCF2;
+    font-size:17px;
+    max-width:520px;
+    margin:0 auto;
+    line-height:1.5;
+  }
+
+  /* code entry card */
+  .code-card{
+    background:var(--parchment);
+    border:1px solid var(--parchment-edge);
+    border-radius:26px;
+    padding:26px 24px;
+    max-width:520px;
+    margin:0 auto 44px;
+    box-shadow:0 20px 50px rgba(10,10,40,.35);
+    position:relative;
+  }
+  .code-card h2{
+    font-family:'Baloo 2', sans-serif;
+    font-size:20px;
+    margin:0 0 4px;
+    color:var(--ink);
+  }
+  .code-card .hint{font-size:14px; color:var(--ink-soft); margin:0 0 16px;}
+  .code-row{display:flex; gap:10px;}
+  @media(max-width:480px){
+    .code-row{flex-direction:column;}
+    #submitCode{width:100%; padding:13px 22px;}
+  }
+  #codeInput{
+    flex:1;
+    font-family:'Baloo 2', sans-serif;
+    font-size:19px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    padding:13px 16px;
+    border-radius:14px;
+    border:2px solid #E7DCC2;
+    background:#fff;
+    color:var(--ink);
+    outline:none;
+    text-align:center;
+  }
+  #codeInput:focus{border-color:var(--c-purple);}
+  #submitCode{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:16px;
+    border:none;
+    border-radius:14px;
+    padding:0 22px;
+    background:linear-gradient(180deg, #FFD866, #F2B93C);
+    color:#5C3C00;
+    cursor:pointer;
+    box-shadow:0 6px 0 #C4901A;
+    transition:transform .06s ease;
+  }
+  #submitCode:active{transform:translateY(4px); box-shadow:0 2px 0 #C4901A;}
+  #codeMsg{min-height:24px; margin-top:12px; font-weight:700; font-size:15px; text-align:center;}
+  .msg-ok{color:#1E8F5F;}
+  .msg-bad{color:#D6393E;}
+
+  .shake{animation:shake .4s;}
+  @keyframes shake{
+    10%,90%{transform:translateX(-2px);}
+    20%,80%{transform:translateX(4px);}
+    30%,50%,70%{transform:translateX(-8px);}
+    40%,60%{transform:translateX(8px);}
+  }
+
+  /* jars grid */
+  .jars-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:22px;
+    margin-bottom:34px;
+  }
+  @media(max-width:760px){ .jars-grid{grid-template-columns:repeat(2, 1fr);} }
+  @media(max-width:480px){ .jars-grid{grid-template-columns:1fr;} }
+
+  .jar-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:22px;
+    padding:18px 14px 16px;
+    text-align:center;
+    backdrop-filter:blur(6px);
+  }
+  .jar-card .emoji{font-size:22px;}
+  .jar-card h3{
+    font-family:'Baloo 2', sans-serif;
+    color:#fff;
+    font-size:15px;
+    margin:6px 0 12px;
+  }
+  .jar-svg{width:100%; max-width:120px; height:140px; margin:0 auto; display:block;}
+
+  .cadence-tag{
+    display:inline-block;
+    margin-top:10px;
+    font-size:11.5px;
+    font-weight:700;
+    color:#1B1B3A;
+    background:var(--gold);
+    padding:4px 10px;
+    border-radius:999px;
+  }
+
+  /* stats lock button */
+  .stats-gate{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:stretch;
+    gap:12px;
+    margin-bottom:40px;
+  }
+  #openStats{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:16px;
+    padding:14px 26px;
+    border-radius:16px;
+    border:none;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.25);
+    cursor:pointer;
+    flex:1 1 200px;
+    max-width:280px;
+  }
+  #openStats:hover{background:rgba(255,255,255,.14);}
+  .parent-btn{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:14px;
+    padding:14px 22px;
+    border-radius:16px;
+    background:rgba(255,255,255,.04);
+    color:#C7CCF2;
+    border:1px solid rgba(255,255,255,.18);
+    cursor:pointer;
+    flex:1 1 200px;
+    max-width:280px;
+  }
+  .parent-btn:hover{background:rgba(255,255,255,.1);}
+
+  @media(max-width:420px){
+    .stats-gate{ flex-direction:column; align-items:center; }
+    #openStats, .parent-btn{ width:100%; max-width:320px; flex:none; }
+  }
+
+  /* parent panel */
+  .pp-modal{max-width:480px; text-align:left;}
+  .pp-action{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 0; border-bottom:1px solid #EEE3C9;
+    font-size:15px;
+  }
+  .pp-action:last-child{border-bottom:none;}
+  .pp-action label{display:flex; align-items:center; gap:10px; cursor:pointer;}
+  .pp-action input[type="checkbox"]{width:20px; height:20px;}
+  .pp-scale{display:flex; gap:6px;}
+  .pp-scale button{
+    width:34px; height:34px; border-radius:10px; border:2px solid #E7DCC2;
+    background:#fff; font-family:'Baloo 2', sans-serif; font-weight:700; cursor:pointer;
+  }
+  .pp-scale button.active{background:var(--gold); border-color:#E0A800;}
+  .pp-result{
+    margin-top:16px; padding:16px; border-radius:14px; background:#F2E6CE; text-align:center; display:none;
+  }
+  .pp-result.show{display:block;}
+  .pp-penalty-divider{
+    margin-top:14px; padding-top:10px; border-top:1px dashed #D8A9A9;
+    font-size:12.5px; font-weight:700; color:#B04545; text-transform:none;
+  }
+  .pp-action.pp-penalty{ color:#B04545; }
+  .pp-action.pp-penalty input[type="checkbox"]{ accent-color:#D6393E; }
+  .pp-expand-btn{
+    width:100%; font-family:'Baloo 2', sans-serif; font-weight:700; font-size:14px;
+    padding:12px; border-radius:12px; border:1px dashed #B8A98A;
+    background:transparent; color:var(--ink-soft); cursor:pointer;
+  }
+  .pp-expand-btn:hover{ background:#F2E6CE; }
+  .pp-code{
+    font-family:'Baloo 2', sans-serif; font-size:26px; font-weight:800;
+    letter-spacing:2px; color:var(--ink); margin:6px 0;
+  }
+  .pp-breakdown{font-size:13px; color:var(--ink-soft); margin-top:6px; line-height:1.5;}
+
+  /* modal */
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(10,8,30,.6);
+    display:none; align-items:center; justify-content:center; z-index:50; padding:18px;
+  }
+  .modal-overlay.show{display:flex;}
+  .modal{
+    background:var(--parchment);
+    border-radius:22px;
+    padding:26px 24px;
+    max-width:420px;
+    width:100%;
+    box-shadow:0 30px 70px rgba(0,0,0,.4);
+    text-align:center;
+  }
+  .modal h3{font-family:'Baloo 2', sans-serif; margin:0 0 14px; font-size:20px;}
+  .modal input{
+    width:100%;
+    font-size:20px;
+    text-align:center;
+    padding:12px;
+    border-radius:12px;
+    border:2px solid #E7DCC2;
+    margin-bottom:14px;
+    font-family:'Baloo 2', sans-serif;
+  }
+  .modal .btn-row{display:flex; gap:10px; justify-content:center; flex-wrap:wrap;}
+  .modal button{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    border:none;
+    border-radius:12px;
+    padding:11px 20px;
+    cursor:pointer;
+    font-size:15px;
+  }
+  .btn-primary{background:#FFD866; color:#5C3C00;}
+  .btn-secondary{background:#E7E2D4; color:#5B5478;}
+  .modal-msg{min-height:20px; font-weight:700; font-size:14px; margin-bottom:6px;}
+
+  /* stats panel */
+  #statsPanel{display:none;}
+  #statsPanel.show{display:block;}
+  .stat-card{
+    background:var(--parchment);
+    border-radius:22px;
+    padding:20px;
+    margin-bottom:18px;
+  }
+  .stat-head{display:flex; align-items:center; gap:10px; margin-bottom:10px;}
+  .stat-head .dot{width:14px; height:14px; border-radius:50%;}
+  .stat-head h4{font-family:'Baloo 2', sans-serif; margin:0; font-size:17px; flex:1;}
+  .stat-value{font-size:26px; font-weight:800; font-family:'Baloo 2', sans-serif;}
+  .stat-sub{font-size:13.5px; color:var(--ink-soft); margin-top:2px;}
+  .progress-track{height:10px; background:#EEE3C9; border-radius:999px; margin-top:12px; overflow:hidden;}
+  .progress-fill{height:100%; border-radius:999px; transition:width .5s ease;}
+  .redeem-btn{
+    margin-top:14px;
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:14px;
+    border:none;
+    padding:10px 18px;
+    border-radius:12px;
+    cursor:pointer;
+    color:#fff;
+  }
+
+  .chart-card{background:var(--parchment); border-radius:22px; padding:20px;}
+  .chart-card h4{font-family:'Baloo 2', sans-serif; margin:0 0 12px;}
+
+  /* ===== Landing (role select) ===== */
+  #landingScreen{
+    position:fixed; inset:0; z-index:40;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:26px; padding:20px; text-align:center;
+  }
+  #landingScreen .land-title{
+    font-family:'Baloo 2', sans-serif; font-weight:800; color:#fff;
+    font-size:clamp(28px,6vw,42px); text-shadow:0 2px 18px rgba(155,107,255,.45);
+  }
+  #landingScreen .land-sub{color:#C7CCF2; font-size:16px; margin-top:-10px;}
+  .role-row{display:flex; gap:18px; flex-wrap:wrap; justify-content:center;}
+  .role-btn{
+    width:170px; padding:26px 16px;
+    border-radius:26px; border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.07); backdrop-filter:blur(6px);
+    cursor:pointer; color:#fff;
+    font-family:'Baloo 2', sans-serif;
+    transition:transform .12s ease, background .12s ease;
+  }
+  .role-btn:hover{ transform:translateY(-3px); background:rgba(255,255,255,.13); }
+  .role-btn .role-emoji{font-size:44px; display:block; margin-bottom:10px;}
+  .role-btn .role-label{font-size:18px; font-weight:700;}
+
+  #mainApp.hidden-app{ display:none; }
+
+  /* ===== Puzzle gate (child entry) ===== */
+  .puzzle-modal{max-width:420px;}
+  .puzzle-area{
+    position:relative; width:100%; height:220px;
+    background:linear-gradient(180deg, #1B2560, #2B1F5E);
+    border-radius:18px; overflow:hidden; margin:14px 0 4px;
+  }
+  .puzzle-star{
+    position:absolute; width:52px; height:52px; border:none; border-radius:50%;
+    background:rgba(255,255,255,.14); border:2px solid rgba(255,255,255,.4);
+    color:#fff; font-family:'Baloo 2', sans-serif; font-weight:800; font-size:20px;
+    cursor:pointer; transition:transform .15s ease, background .15s ease, opacity .3s ease;
+  }
+  .puzzle-star:hover{ transform:scale(1.08); }
+  .puzzle-star.done{ background:var(--gold); color:#5C3C00; border-color:#E0A800; opacity:.55; pointer-events:none; }
+  .puzzle-star.wrong{ animation:shake .35s; }
+  .puzzle-hint{font-size:13.5px; color:var(--ink-soft); margin-top:2px;}
+  .best-line{font-size:14.5px; color:var(--ink-soft); margin-top:8px;}
+
+  .star-fly{
+    position:fixed;
+    font-size:30px;
+    z-index:60;
+    pointer-events:none;
+    transition:all .9s cubic-bezier(.2,.8,.3,1);
+  }
+
+  footer{text-align:center; color:#7C82B8; font-size:13px; margin-top:40px;}
+</style>
+</head>
+<body>
+
+<div id="bgstars"></div>
+
+<!-- Role select landing screen -->
+<div id="landingScreen">
+  <span style="font-size:40px;">✨</span>
+  <div class="land-title">Зоряна скарбничка Емми</div>
+  <div class="land-sub">Хто зараз заходить?</div>
+  <div class="role-row">
+    <button class="role-btn" id="roleChildBtn">
+      <span class="role-emoji">👧</span>
+      <span class="role-label">Дитина</span>
+    </button>
+    <button class="role-btn" id="roleParentBtn">
+      <span class="role-emoji">🔑</span>
+      <span class="role-label">Батьки</span>
+    </button>
+  </div>
+</div>
+
+<!-- Puzzle gate before entering the child view -->
+<div class="modal-overlay" id="puzzleOverlay">
+  <div class="modal puzzle-modal">
+    <h3>Спершу маленька гра ✨</h3>
+    <p class="puzzle-hint" id="puzzleHint">Натисни на зірочки по порядку від 1 до 5</p>
+    <div class="puzzle-area" id="puzzleArea"></div>
+  </div>
+</div>
+
+<div class="wrap hidden-app" id="mainApp">
+
+  <header>
+    <span class="eyebrow-star">✨</span>
+    <h1>Зоряна скарбничка Емми</h1>
+    <p>Кожна зірочка — маленький крок до чогось приємного. Впиши код і дивись, як банка наповнюється!</p>
+  </header>
+
+  <div class="jars-grid" id="jarsGrid"></div>
+
+  <div class="code-card">
+    <h2>Ввести код</h2>
+    <p class="hint">Отримала код за виконане завдання? Впиши його сюди.</p>
+    <div class="code-row">
+      <input id="codeInput" maxlength="8" placeholder="XXX-XXXX" autocomplete="off">
+      <button id="submitCode">Додати</button>
+    </div>
+    <div id="codeMsg"></div>
+  </div>
+
+  <div class="stats-gate">
+    <button id="openStats">🔒 Подивитись статистику</button>
+    <button id="openParentPanel" class="parent-btn">🔑 Панель батьків</button>
+  </div>
+
+  <div id="statsPanel">
+    <div id="statCards"></div>
+    <div class="chart-card">
+      <h4>Графік старань (зірочки за тиждень)</h4>
+      <canvas id="effortChart" height="140"></canvas>
+      <div class="best-line" id="bestLine"></div>
+    </div>
+  </div>
+
+  <footer>Скарбничка Емми · зроблено з любов'ю ✨</footer>
+</div>
+
+<!-- Riddle modal -->
+<div class="modal-overlay" id="riddleOverlay">
+  <div class="modal">
+    <h3 id="riddleQ">Задачка</h3>
+    <input id="riddleAnswer" inputmode="numeric" placeholder="Відповідь">
+    <div class="modal-msg" id="riddleMsg"></div>
+    <div class="btn-row">
+      <button class="btn-secondary" id="riddleCancel">Скасувати</button>
+      <button class="btn-primary" id="riddleOk">Перевірити</button>
+    </div>
+  </div>
+</div>
+
+<!-- PIN modal -->
+<div class="modal-overlay" id="pinOverlay">
+  <div class="modal">
+    <h3>Код батьків</h3>
+    <input id="pinInput" type="password" inputmode="numeric" maxlength="4" placeholder="****">
+    <div class="modal-msg" id="pinMsg"></div>
+    <div class="btn-row">
+      <button class="btn-secondary" id="pinCancel">Скасувати</button>
+      <button class="btn-primary" id="pinOk">Підтвердити</button>
+    </div>
+  </div>
+</div>
+
+<!-- Parent daily panel -->
+<div class="modal-overlay" id="parentPanelOverlay">
+  <div class="modal pp-modal">
+    <h3 style="text-align:center;">Підсумок дня</h3>
+    <div id="ppActions"></div>
+    <div class="pp-result" id="ppResult">
+      <div>Код на сьогодні:</div>
+      <div class="pp-code" id="ppCode">—</div>
+      <div class="pp-breakdown" id="ppBreakdown"></div>
+    </div>
+    <div class="btn-row" style="margin-top:16px; flex-wrap:wrap;">
+      <button class="btn-secondary" id="ppCancel">Закрити</button>
+      <button class="btn-primary" id="ppGenerate">Створити код дня</button>
+    </div>
+    <div class="btn-row" style="margin-top:10px;">
+      <button class="pp-expand-btn" id="ppExpandFull">🔓 Розгорнути повний вигляд</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- Redeem confirm modal -->
+<div class="modal-overlay" id="redeemOverlay">
+  <div class="modal">
+    <h3 id="redeemTitle">Видати</h3>
+    <p id="redeemBody" style="font-size:15px; color:var(--ink-soft);"></p>
+    <div class="btn-row">
+      <button class="btn-secondary" id="redeemCancel">Скасувати</button>
+      <button class="btn-primary" id="redeemConfirm">Так, видано</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============ CONFIG ============ */
+
+// TODO: встав сюди URL твого Google Apps Script Web App (закінчується на /exec)
+const GAS_URL = "https://script.google.com/macros/s/AKfycbwcGU6MmZZs_Opmv8HtILPnEWStxG3A4XuIUj41BMLdmQsvD0B_4kHg7SaEI12iqEe9/exec";
+
+const PARENT_PIN = "8787";
+
+const CATEGORIES = [
+  {key:'blue',   name:'Подарунок',         emoji:'🎁', unit:'money',   valuePerStar:86,  cadence:'deadline', deadline:'2026-11-05', capStars:116, color:'var(--c-blue)',   colorDk:'var(--c-blue-dk)'},
+  {key:'pink',   name:'Кишенькові гроші',  emoji:'💗', unit:'money',   valuePerStar:36,  cadence:'weekly',   capStars:14,  color:'var(--c-pink)',   colorDk:'var(--c-pink-dk)'},
+  {key:'yellow', name:'Вихідні',           emoji:'🌞', unit:'money',   valuePerStar:29,  cadence:'weekly',   capStars:7,   color:'var(--c-yellow)', colorDk:'var(--c-yellow-dk)'},
+  {key:'red',    name:'Екранний час',      emoji:'📱', unit:'minutes', valuePerStar:120, cadence:'weekly',   capStars:7,   color:'var(--c-red)',    colorDk:'var(--c-red-dk)'},
+  {key:'purple', name:'Онлайн-гра',        emoji:'🎮', unit:'money',   valuePerStar:3,   cadence:'monthly',  capStars:60,  color:'var(--c-purple)', colorDk:'var(--c-purple-dk)'},
+  {key:'brown',  name:"McDonald's",        emoji:'🍟', unit:'money',   valuePerStar:6,   cadence:'monthly',  capStars:180, color:'var(--c-brown)', colorDk:'var(--c-brown-dk)'},
+];
+
+const CODES = [{"code": "BLU-XDA2", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-HE2D", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-7UCV", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-ACGH", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-AUGZ", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-UQHR", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-46A3", "color": "blue", "category": "Подарунок", "stars": 3}, {"code": "BLU-ZQMJ", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-93MD", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-DN6N", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-4B2R", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-8PCU", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-XW76", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-GZCB", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-3KC6", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-DPJR", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-NFNN", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-JZ8Y", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-WXFU", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-FRPJ", "color": "blue", "category": "Подарунок", "stars": 3}, {"code": "BLU-XZUH", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "BLU-533B", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-B4MP", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-G89V", "color": "blue", "category": "Подарунок", "stars": 3}, {"code": "BLU-MGXS", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-8XRE", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-H2UU", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-VQ7V", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-HETS", "color": "blue", "category": "Подарунок", "stars": 1}, {"code": "BLU-B6DE", "color": "blue", "category": "Подарунок", "stars": 2}, {"code": "PNK-4YQW", "color": "pink", "category": "Кишенькові гроші", "stars": 0}, {"code": "PNK-PWRT", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "PNK-U69A", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-DY7U", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-3XMD", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "PNK-FRA9", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-2JT3", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "PNK-8D6X", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "PNK-XTWG", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "PNK-3FU9", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-T8AW", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "PNK-AD8N", "color": "pink", "category": "Кишенькові гроші", "stars": 3}, {"code": "PNK-54KH", "color": "pink", "category": "Кишенькові гроші", "stars": 0}, {"code": "PNK-7V9C", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "PNK-S5C3", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-EEYS", "color": "pink", "category": "Кишенькові гроші", "stars": 3}, {"code": "PNK-FJT6", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-9G8U", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-ZGZK", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "PNK-YXNR", "color": "pink", "category": "Кишенькові гроші", "stars": 3}, {"code": "PNK-RDHH", "color": "pink", "category": "Кишенькові гроші", "stars": 0}, {"code": "PNK-AVUH", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-ACZX", "color": "pink", "category": "Кишенькові гроші", "stars": 0}, {"code": "PNK-C7B6", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "PNK-THJY", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-UE28", "color": "pink", "category": "Кишенькові гроші", "stars": 3}, {"code": "PNK-VSH4", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-QGDD", "color": "pink", "category": "Кишенькові гроші", "stars": 2}, {"code": "PNK-NQQR", "color": "pink", "category": "Кишенькові гроші", "stars": 3}, {"code": "PNK-BYXX", "color": "pink", "category": "Кишенькові гроші", "stars": 1}, {"code": "YLW-P2M4", "color": "yellow", "category": "Вихідні", "stars": 3}, {"code": "YLW-HGGU", "color": "yellow", "category": "Вихідні", "stars": 1}, {"code": "YLW-QFJR", "color": "yellow", "category": "Вихідні", "stars": 1}, {"code": "YLW-8CR4", "color": "yellow", "category": "Вихідні", "stars": 3}, {"code": "YLW-UDBX", "color": "yellow", "category": "Вихідні", "stars": 3}, {"code": "YLW-5AC8", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-HFQS", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-6P7B", "color": "yellow", "category": "Вихідні", "stars": 1}, {"code": "YLW-APJ8", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-RKQZ", "color": "yellow", "category": "Вихідні", "stars": 3}, {"code": "YLW-4UYZ", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-GKG9", "color": "yellow", "category": "Вихідні", "stars": 0}, {"code": "YLW-2UB2", "color": "yellow", "category": "Вихідні", "stars": 1}, {"code": "YLW-BVST", "color": "yellow", "category": "Вихідні", "stars": 3}, {"code": "YLW-TFB9", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-6FCW", "color": "yellow", "category": "Вихідні", "stars": 0}, {"code": "YLW-6HPD", "color": "yellow", "category": "Вихідні", "stars": 3}, {"code": "YLW-VHVW", "color": "yellow", "category": "Вихідні", "stars": 0}, {"code": "YLW-CQYV", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-M8JG", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-MHJP", "color": "yellow", "category": "Вихідні", "stars": 1}, {"code": "YLW-XKRM", "color": "yellow", "category": "Вихідні", "stars": 3}, {"code": "YLW-8CAR", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-VDCU", "color": "yellow", "category": "Вихідні", "stars": 1}, {"code": "YLW-JE8N", "color": "yellow", "category": "Вихідні", "stars": 3}, {"code": "YLW-7HNK", "color": "yellow", "category": "Вихідні", "stars": 1}, {"code": "YLW-5UZK", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-4XTA", "color": "yellow", "category": "Вихідні", "stars": 2}, {"code": "YLW-UK8Y", "color": "yellow", "category": "Вихідні", "stars": 1}, {"code": "YLW-7EJD", "color": "yellow", "category": "Вихідні", "stars": 3}, {"code": "RED-2UEJ", "color": "red", "category": "Екранний час", "stars": 1}, {"code": "RED-GZMG", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-6JTS", "color": "red", "category": "Екранний час", "stars": 1}, {"code": "RED-86BC", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-5JBA", "color": "red", "category": "Екранний час", "stars": 1}, {"code": "RED-EXJF", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-UZQU", "color": "red", "category": "Екранний час", "stars": 0}, {"code": "RED-C97Z", "color": "red", "category": "Екранний час", "stars": 3}, {"code": "RED-UB5N", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-EQEB", "color": "red", "category": "Екранний час", "stars": 1}, {"code": "RED-7846", "color": "red", "category": "Екранний час", "stars": 0}, {"code": "RED-NGYH", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-N3U7", "color": "red", "category": "Екранний час", "stars": 3}, {"code": "RED-W2E8", "color": "red", "category": "Екранний час", "stars": 3}, {"code": "RED-6F44", "color": "red", "category": "Екранний час", "stars": 1}, {"code": "RED-QAF2", "color": "red", "category": "Екранний час", "stars": 3}, {"code": "RED-48Q4", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-24HJ", "color": "red", "category": "Екранний час", "stars": 1}, {"code": "RED-ZDP6", "color": "red", "category": "Екранний час", "stars": 0}, {"code": "RED-SHG5", "color": "red", "category": "Екранний час", "stars": 3}, {"code": "RED-NK54", "color": "red", "category": "Екранний час", "stars": 3}, {"code": "RED-HAYG", "color": "red", "category": "Екранний час", "stars": 1}, {"code": "RED-J6C9", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-NXTP", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-5UM9", "color": "red", "category": "Екранний час", "stars": 0}, {"code": "RED-7JFV", "color": "red", "category": "Екранний час", "stars": 3}, {"code": "RED-JBDW", "color": "red", "category": "Екранний час", "stars": 1}, {"code": "RED-24MQ", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-TDP7", "color": "red", "category": "Екранний час", "stars": 2}, {"code": "RED-JBZQ", "color": "red", "category": "Екранний час", "stars": 0}, {"code": "PPL-84UY", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-22YG", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-C9Y8", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-MY6D", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-KTKY", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-PZKU", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-QY9P", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-7FWV", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-U5AK", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-Q4VW", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-RRRY", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-S479", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-FYCK", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-XWMC", "color": "purple", "category": "Онлайн-гра", "stars": 3}, {"code": "PPL-3HYK", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-GEAB", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-SW63", "color": "purple", "category": "Онлайн-гра", "stars": 0}, {"code": "PPL-Q7XV", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-ZPSP", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-XZA7", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-37D3", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-F49Z", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-BUH8", "color": "purple", "category": "Онлайн-гра", "stars": 3}, {"code": "PPL-RE4R", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-UWM9", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-RW52", "color": "purple", "category": "Онлайн-гра", "stars": 3}, {"code": "PPL-Q58U", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-F26S", "color": "purple", "category": "Онлайн-гра", "stars": 2}, {"code": "PPL-3H5X", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "PPL-3TSX", "color": "purple", "category": "Онлайн-гра", "stars": 1}, {"code": "BRN-RCZK", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-MM7U", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-EHPZ", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-GCQQ", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-RQBG", "color": "brown", "category": "McDonald's", "stars": 3}, {"code": "BRN-P73V", "color": "brown", "category": "McDonald's", "stars": 3}, {"code": "BRN-A673", "color": "brown", "category": "McDonald's", "stars": 2}, {"code": "BRN-SA9N", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-P679", "color": "brown", "category": "McDonald's", "stars": 3}, {"code": "BRN-U22U", "color": "brown", "category": "McDonald's", "stars": 2}, {"code": "BRN-7HSH", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-SAPM", "color": "brown", "category": "McDonald's", "stars": 2}, {"code": "BRN-4P2F", "color": "brown", "category": "McDonald's", "stars": 3}, {"code": "BRN-8EWU", "color": "brown", "category": "McDonald's", "stars": 0}, {"code": "BRN-PVVY", "color": "brown", "category": "McDonald's", "stars": 0}, {"code": "BRN-XQE6", "color": "brown", "category": "McDonald's", "stars": 2}, {"code": "BRN-BJPM", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-MM37", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-395Q", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-CSA2", "color": "brown", "category": "McDonald's", "stars": 2}, {"code": "BRN-9NHX", "color": "brown", "category": "McDonald's", "stars": 0}, {"code": "BRN-9XB3", "color": "brown", "category": "McDonald's", "stars": 0}, {"code": "BRN-HG5A", "color": "brown", "category": "McDonald's", "stars": 2}, {"code": "BRN-HESY", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-9GRZ", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-NFWW", "color": "brown", "category": "McDonald's", "stars": 3}, {"code": "BRN-ZD35", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-KDVA", "color": "brown", "category": "McDonald's", "stars": 3}, {"code": "BRN-VY89", "color": "brown", "category": "McDonald's", "stars": 1}, {"code": "BRN-9ZGC", "color": "brown", "category": "McDonald's", "stars": 2}];
+
+const RIDDLES = [
+  {q:"7 + 8 = ?", a:"15"},
+  {q:"12 - 5 = ?", a:"7"},
+  {q:"3 × 4 = ?", a:"12"},
+  {q:"20 - 9 = ?", a:"11"},
+  {q:"6 + 9 = ?", a:"15"},
+  {q:"4 × 5 = ?", a:"20"},
+  {q:"18 - 7 = ?", a:"11"},
+  {q:"9 + 9 = ?", a:"18"},
+  {q:"3 × 6 = ?", a:"18"},
+  {q:"25 - 8 = ?", a:"17"},
+  {q:"7 × 2 = ?", a:"14"},
+  {q:"14 + 6 = ?", a:"20"},
+  {q:"30 - 12 = ?", a:"18"},
+  {q:"8 × 3 = ?", a:"24"},
+  {q:"16 + 5 = ?", a:"21"},
+  {q:"45 - 20 = ?", a:"25"},
+  {q:"9 × 2 = ?", a:"18"},
+  {q:"13 + 9 = ?", a:"22"},
+  {q:"5 × 5 = ?", a:"25"},
+  {q:"24 - 6 = ?", a:"18"},
+  {q:"Скільки днів у тижні?", a:"7"},
+  {q:"Скільки місяців у році?", a:"12"},
+  {q:"Скільки пальців на одній руці?", a:"5"},
+  {q:"Скільки кутів у трикутнику?", a:"3"},
+  {q:"Скільки букв «а» у слові «мама»?", a:"2"},
+];
+
+/* Fixed daily habits — each maps to one currency color.
+   type "fixed": either done (stars) or not (0).
+   type "scale": parent picks 0/1/2 with the given labels. */
+const DAILY_ACTIONS = [
+  {key:'teethAM',  label:'Чищення зубів вранці', emoji:'🪥', color:'pink',   type:'fixed', stars:1},
+  {key:'teethPM',  label:'Чищення зубів ввечері', emoji:'🪥', color:'yellow', type:'fixed', stars:1},
+  {key:'room',     label:'Прибирання кімнати',    emoji:'🧹', color:'purple', type:'scale', scaleLabels:['Ні','Так','Відмінно']},
+  {key:'behavior', label:'Поведінка за день',     emoji:'😊', color:'blue',   type:'scale', scaleLabels:['Так собі','Добре','Чудово']},
+  {key:'reading',  label:'Читання книжки',        emoji:'📖', color:'red',    type:'fixed', stars:1},
+  {key:'dog',      label:'Вигул собачки',         emoji:'🐕', color:'pink',   type:'fixed', stars:1},
+];
+const BONUS_COLOR = 'brown'; // every completed action also adds +1 here (McDonald's meta-jar)
+
+/* Daily codes are SELF-DESCRIBING (no shared/server storage needed):
+   the code itself encodes the star delta per color plus a checksum digit,
+   so it can be verified on ANY device — phone, tablet, whatever — offline,
+   with no dependency on which browser generated it. */
+const DAILY_CODE_OFFSET = 6; // lets each digit represent deltas roughly -6..29
+
+function encodeDailyCode(distribution){
+  const order = CATEGORIES.map(c => c.key);
+  let payload = '';
+  order.forEach(key => {
+    const v = (distribution[key] || 0) + DAILY_CODE_OFFSET;
+    payload += Math.max(0, Math.min(35, v)).toString(36).toUpperCase();
+  });
+  let sum = 0;
+  for (const ch of payload) sum += ch.charCodeAt(0);
+  const checksum = (sum % 36).toString(36).toUpperCase();
+  return 'D' + payload + checksum; // e.g. D + 6 chars + 1 checksum = 8 chars total
+}
+
+function decodeDailyCode(code){
+  if(!/^D[0-9A-Z]{7}$/.test(code)) return null;
+  const payload = code.slice(1, 7);
+  const checksum = code.slice(7, 8);
+  let sum = 0;
+  for (const ch of payload) sum += ch.charCodeAt(0);
+  const expected = (sum % 36).toString(36).toUpperCase();
+  if(expected !== checksum) return null;
+  const order = CATEGORIES.map(c => c.key);
+  const distribution = {};
+  for(let i=0;i<order.length;i++){
+    const v = parseInt(payload[i], 36);
+    distribution[order[i]] = v - DAILY_CODE_OFFSET;
+  }
+  return distribution;
+}
+
+// Negative checkboxes: reduce specific jars instead of adding to them
+const PENALTY_ACTIONS = [
+  {key:'sweets', label:'Забагато солодкого за день', emoji:'🍬', penalty:{brown:-1, purple:-1}},
+  {key:'gadget', label:'Забагато гаджету', emoji:'📵', penalty:{yellow:-1, pink:-1}},
+];
+
+/* ============ STATE (localStorage) ============ */
+
+const LS_USED = 'emma_used_codes';
+const LS_HISTORY = 'emma_history';
+const LS_BALANCE = 'emma_balance';
+
+function loadUsed(){ return new Set(JSON.parse(localStorage.getItem(LS_USED) || '[]')); }
+function saveUsed(set){ localStorage.setItem(LS_USED, JSON.stringify([...set])); }
+function loadHistory(){ return JSON.parse(localStorage.getItem(LS_HISTORY) || '[]'); }
+function saveHistory(h){ localStorage.setItem(LS_HISTORY, JSON.stringify(h)); }
+function loadBalance(){ return JSON.parse(localStorage.getItem(LS_BALANCE) || '{}'); }
+function saveBalance(b){ localStorage.setItem(LS_BALANCE, JSON.stringify(b)); }
+
+let usedCodes = loadUsed();
+let history = loadHistory();
+let balance = loadBalance();
+CATEGORIES.forEach(c => { if(!(c.key in balance)) balance[c.key] = 0; });
+
+/* ============ BACKGROUND STARS ============ */
+(function initBgStars(){
+  const container = document.getElementById('bgstars');
+  for(let i=0;i<60;i++){
+    const s = document.createElement('div');
+    s.className = 'bgstar';
+    const size = Math.random()*2.4 + 1;
+    s.style.width = size+'px';
+    s.style.height = size+'px';
+    s.style.left = Math.random()*100+'%';
+    s.style.top = Math.random()*100+'%';
+    s.style.animationDelay = (Math.random()*3)+'s';
+    container.appendChild(s);
+  }
+})();
+
+/* ============ JAR RENDERING ============ */
+
+function jarSvg(cat, fillPct){
+  const h = 140, w = 120;
+  const bodyTop = 42, bodyH = h - bodyTop - 6;
+  const fillH = bodyH * fillPct;
+  const fillY = bodyTop + (bodyH - fillH);
+  return `
+  <svg class="jar-svg" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="clip-${cat.key}">
+        <path d="M14 ${bodyTop} h92 v${bodyH-14} a14 14 0 0 1 -14 14 h-64 a14 14 0 0 1 -14 -14 z"/>
+      </clipPath>
+    </defs>
+    <!-- lid -->
+    <rect x="42" y="4" width="36" height="10" rx="3" fill="${cat.colorDk}"/>
+    <rect x="36" y="12" width="48" height="12" rx="4" fill="${cat.colorDk}"/>
+    <!-- jar outline -->
+    <path d="M14 ${bodyTop} h92 v${bodyH-14} a14 14 0 0 1 -14 14 h-64 a14 14 0 0 1 -14 -14 z"
+      fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.5)" stroke-width="2"/>
+    <!-- fill -->
+    <g clip-path="url(#clip-${cat.key})">
+      <rect x="14" y="${fillY}" width="92" height="${h}" fill="${cat.color}" opacity="0.85"/>
+      <text x="60" y="${fillY-6}" font-size="14" text-anchor="middle">✨</text>
+    </g>
+  </svg>`;
+}
+
+function visualFillPct(catKey){
+  // abstract visual fill, capped — not the exact number (stats stay behind the riddle gate)
+  const cap = 12;
+  return Math.max(0.04, Math.min(1, balance[catKey] / cap));
+}
+
+function renderJars(){
+  const grid = document.getElementById('jarsGrid');
+  grid.innerHTML = '';
+  CATEGORIES.forEach(cat => {
+    const card = document.createElement('div');
+    card.className = 'jar-card';
+    card.id = 'jarcard-' + cat.key;
+    const cadenceLabel = cat.cadence === 'deadline' ? 'до дати'
+      : cat.cadence === 'monthly' ? 'раз на місяць'
+      : 'щотижня';
+    card.innerHTML = `
+      <div class="emoji">${cat.emoji}</div>
+      <h3>${cat.name}</h3>
+      ${jarSvg(cat, visualFillPct(cat.key))}
+      <span class="cadence-tag">${cadenceLabel}</span>
+    `;
+    grid.appendChild(card);
+  });
+}
+renderJars();
+
+/* ============ CODE SUBMISSION ============ */
+
+function sendToSheet(payload){
+  if(GAS_URL.includes('PASTE_YOUR')) return; // not configured yet
+  fetch(GAS_URL, {
+    method:'POST',
+    headers:{'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify(payload)
+  }).catch(()=>{});
+}
+
+function flyStar(fromEl, toEl){
+  const star = document.createElement('div');
+  star.className = 'star-fly';
+  star.textContent = '⭐';
+  const fr = fromEl.getBoundingClientRect();
+  star.style.left = (fr.left + fr.width/2 - 15) + 'px';
+  star.style.top = fr.top + 'px';
+  document.body.appendChild(star);
+  requestAnimationFrame(()=>{
+    const tr = toEl.getBoundingClientRect();
+    star.style.left = (tr.left + tr.width/2 - 15) + 'px';
+    star.style.top = (tr.top + 20) + 'px';
+    star.style.transform = 'scale(1.4) rotate(360deg)';
+    star.style.opacity = '0.15';
+  });
+  setTimeout(()=> star.remove(), 950);
+}
+
+document.getElementById('submitCode').addEventListener('click', submitCode);
+document.getElementById('codeInput').addEventListener('keydown', e => { if(e.key==='Enter') submitCode(); });
+
+function submitCode(){
+  const input = document.getElementById('codeInput');
+  const msg = document.getElementById('codeMsg');
+  const raw = input.value.trim().toUpperCase();
+  if(!raw){ return; }
+
+  if(usedCodes.has(raw)){
+    msg.textContent = 'Цей код вже використаний раніше 🙂';
+    msg.className = 'msg-bad';
+    return;
+  }
+
+  // 1) daily (parent-panel generated) codes are self-decoding — no shared storage needed,
+  //    so they work the same on any device the code is typed into
+  const decodedDistribution = decodeDailyCode(raw);
+  if(decodedDistribution){
+    usedCodes.add(raw);
+    saveUsed(usedCodes);
+
+    let totalStars = 0;
+    let hadPenalty = false;
+    Object.entries(decodedDistribution).forEach(([color, stars]) => {
+      if(stars === 0) return;
+      const before = balance[color] || 0;
+      const after = Math.max(0, before + stars); // never let a jar go negative
+      const applied = after - before;
+      balance[color] = after;
+      totalStars += stars;
+      if(stars < 0) hadPenalty = true;
+      history.push({ ts: Date.now(), action:'earn', color, code: raw, stars: applied });
+      const cat = CATEGORIES.find(c => c.key === color);
+      sendToSheet({ action:'earn', color, category: cat ? cat.name : color, code: raw, stars: applied, unit:'', valuePerStar:'', amount:'', note: stars < 0 ? 'штраф' : 'день' });
+    });
+    saveBalance(balance);
+    saveHistory(history);
+
+    const firstColor = Object.keys(decodedDistribution).find(k => decodedDistribution[k] > 0);
+    if(firstColor) flyStar(input, document.getElementById('jarcard-' + firstColor));
+
+    if(totalStars > 0){
+      msg.textContent = hadPenalty
+        ? `Зараховано, але сьогодні трохи менше через штраф`
+        : `Супер день! +${totalStars} ${totalStars===1?'зірочка':'зірочок'} за сьогодні 🌟`;
+    } else if(totalStars < 0){
+      msg.textContent = 'Сьогодні без нових зірочок, і трохи знято за штраф';
+    } else {
+      msg.textContent = 'Код прийнято.';
+    }
+    msg.className = 'msg-ok';
+    input.value = '';
+    setTimeout(renderJars, 350);
+    return;
+  }
+
+  // 2) check preset bonus codes
+  const found = CODES.find(c => c.code === raw);
+  if(!found){
+    msg.textContent = 'Такого коду немає 🤔 Перевір, чи правильно вписала.';
+    msg.className = 'msg-bad';
+    input.parentElement.classList.add('shake');
+    setTimeout(()=> input.parentElement.classList.remove('shake'), 400);
+    return;
+  }
+
+  usedCodes.add(raw);
+  saveUsed(usedCodes);
+
+  balance[found.color] = (balance[found.color] || 0) + found.stars;
+  saveBalance(balance);
+
+  history.push({ ts: Date.now(), action:'earn', color: found.color, code: raw, stars: found.stars });
+  saveHistory(history);
+
+  sendToSheet({
+    action:'earn', color: found.color, category: found.category,
+    code: raw, stars: found.stars, unit:'', valuePerStar:'', amount:'', note:'бонус'
+  });
+
+  if(found.stars > 0){
+    const targetCard = document.getElementById('jarcard-' + found.color);
+    flyStar(input, targetCard);
+    msg.textContent = `Ура! +${found.stars} ${found.stars===1?'зірочка':'зірочки'} 🌟`;
+  } else {
+    msg.textContent = 'Код прийнято, цього разу без зірочки — наступного разу пощастить!';
+  }
+  msg.className = 'msg-ok';
+  input.value = '';
+
+  setTimeout(renderJars, 350);
+}
+
+/* ============ RIDDLE GATE ============ */
+
+let statsUnlocked = false;
+const riddleOverlay = document.getElementById('riddleOverlay');
+
+document.getElementById('openStats').addEventListener('click', () => {
+  if(statsUnlocked){ showStats(); return; }
+  const r = RIDDLES[Math.floor(Math.random()*RIDDLES.length)];
+  document.getElementById('riddleQ').textContent = r.q;
+  document.getElementById('riddleAnswer').value = '';
+  document.getElementById('riddleMsg').textContent = '';
+  riddleOverlay.dataset.answer = r.a;
+  riddleOverlay.classList.add('show');
+  setTimeout(()=> document.getElementById('riddleAnswer').focus(), 50);
+});
+
+document.getElementById('riddleCancel').addEventListener('click', ()=> riddleOverlay.classList.remove('show'));
+
+document.getElementById('riddleOk').addEventListener('click', () => {
+  const given = document.getElementById('riddleAnswer').value.trim();
+  const correct = riddleOverlay.dataset.answer;
+  if(given === correct){
+    riddleOverlay.classList.remove('show');
+    statsUnlocked = true;
+    showStats();
+  } else {
+    document.getElementById('riddleMsg').textContent = 'Спробуй ще раз 🙂';
+    document.getElementById('riddleMsg').style.color = '#D6393E';
+  }
+});
+
+/* ============ STATS PANEL ============ */
+
+function fmtAmount(cat, stars){
+  if(cat.unit === 'money') return `${stars * cat.valuePerStar} грн`;
+  if(cat.unit === 'minutes'){
+    const mins = stars * cat.valuePerStar;
+    if(mins >= 60) return `${Math.floor(mins/60)} год ${mins%60} хв`;
+    return `${mins} хв`;
+  }
+  return `${stars} зірочок`;
+}
+
+function daysLeft(dateStr){
+  const d = new Date(dateStr + 'T00:00:00');
+  const diff = Math.ceil((d - new Date()) / (1000*60*60*24));
+  return diff;
+}
+
+function showStats(){
+  document.getElementById('statsPanel').classList.add('show');
+  renderStatCards();
+  renderChart();
+  document.getElementById('statsPanel').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function renderStatCards(){
+  const wrap = document.getElementById('statCards');
+  wrap.innerHTML = '';
+  CATEGORIES.forEach(cat => {
+    const stars = balance[cat.key] || 0;
+    const card = document.createElement('div');
+    card.className = 'stat-card';
+
+    let subLine = '';
+    let progressPct = 0;
+    if(cat.cadence === 'deadline'){
+      const dl = daysLeft(cat.deadline);
+      subLine = dl > 0 ? `Залишилось ${dl} дн. до ${cat.deadline.split('-').reverse().join('.')}` : 'Дата настала!';
+    } else if(cat.cadence === 'monthly'){
+      subLine = 'Виплата раз на місяць';
+    } else {
+      subLine = 'Виплата щотижня';
+    }
+    progressPct = Math.min(1, stars / cat.capStars);
+
+    card.innerHTML = `
+      <div class="stat-head">
+        <span class="dot" style="background:${cat.color}"></span>
+        <h4>${cat.emoji} ${cat.name}</h4>
+      </div>
+      <div class="stat-value">${fmtAmount(cat, stars)}</div>
+      <div class="stat-sub">${subLine} · зірочок: ${stars}</div>
+      <div class="progress-track"><div class="progress-fill" style="width:${progressPct*100}%; background:${cat.color}"></div></div>
+      <button class="redeem-btn" style="background:${cat.colorDk}" data-key="${cat.key}">Видано батьками</button>
+    `;
+    wrap.appendChild(card);
+  });
+
+  wrap.querySelectorAll('.redeem-btn').forEach(btn => {
+    btn.addEventListener('click', () => openPinFor(btn.dataset.key));
+  });
+}
+
+/* ============ PIN + REDEEM ============ */
+
+const pinOverlay = document.getElementById('pinOverlay');
+const redeemOverlay = document.getElementById('redeemOverlay');
+let pendingRedeemKey = null;
+let pinPurpose = null; // 'redeem' | 'parentPanel'
+
+function openPinFor(key){
+  pinPurpose = 'redeem';
+  pendingRedeemKey = key;
+  document.getElementById('pinInput').value = '';
+  document.getElementById('pinMsg').textContent = '';
+  pinOverlay.classList.add('show');
+  setTimeout(()=> document.getElementById('pinInput').focus(), 50);
+}
+
+function openPinForParentPanel(){
+  pinPurpose = 'parentPanel';
+  document.getElementById('pinInput').value = '';
+  document.getElementById('pinMsg').textContent = '';
+  pinOverlay.classList.add('show');
+  setTimeout(()=> document.getElementById('pinInput').focus(), 50);
+}
+
+function openPinForRoleParent(){
+  pinPurpose = 'roleParent';
+  document.getElementById('pinInput').value = '';
+  document.getElementById('pinMsg').textContent = '';
+  pinOverlay.classList.add('show');
+  setTimeout(()=> document.getElementById('pinInput').focus(), 50);
+}
+
+document.getElementById('pinCancel').addEventListener('click', ()=> pinOverlay.classList.remove('show'));
+
+document.getElementById('pinOk').addEventListener('click', () => {
+  const val = document.getElementById('pinInput').value.trim();
+  if(val === PARENT_PIN){
+    pinOverlay.classList.remove('show');
+    if(pinPurpose === 'redeem'){
+      openRedeemConfirm(pendingRedeemKey);
+    } else if(pinPurpose === 'parentPanel'){
+      openParentPanel();
+    } else if(pinPurpose === 'roleParent'){
+      statsUnlocked = true; // parent already authenticated, no need for the riddle too
+      document.getElementById('landingScreen').style.display = 'none';
+      openParentPanel();
+    }
+  } else {
+    document.getElementById('pinMsg').textContent = 'Невірний код';
+    document.getElementById('pinMsg').style.color = '#D6393E';
+  }
+});
+
+document.getElementById('openParentPanel').addEventListener('click', openPinForParentPanel);
+document.getElementById('ppExpandFull').addEventListener('click', () => {
+  parentPanelOverlay.classList.remove('show');
+  document.getElementById('mainApp').classList.remove('hidden-app');
+});
+
+function openRedeemConfirm(key){
+  const cat = CATEGORIES.find(c => c.key === key);
+  const stars = balance[key] || 0;
+  document.getElementById('redeemTitle').textContent = `Видати: ${cat.name}`;
+  document.getElementById('redeemBody').textContent =
+    `Накопичено ${fmtAmount(cat, stars)} (${stars} зірочок). Підтвердити видачу і обнулити лічильник?`;
+  redeemOverlay.dataset.key = key;
+  redeemOverlay.classList.add('show');
+}
+
+document.getElementById('redeemCancel').addEventListener('click', ()=> redeemOverlay.classList.remove('show'));
+
+document.getElementById('redeemConfirm').addEventListener('click', () => {
+  const key = redeemOverlay.dataset.key;
+  const cat = CATEGORIES.find(c => c.key === key);
+  const stars = balance[key] || 0;
+  const amount = fmtAmount(cat, stars);
+
+  history.push({ ts: Date.now(), action:'redeem', color:key, stars, amount });
+  saveHistory(history);
+  sendToSheet({
+    action:'redeem', color:key, category:cat.name, code:'', stars,
+    unit:cat.unit, valuePerStar:cat.valuePerStar||'', amount, note:'видано батьками'
+  });
+
+  balance[key] = 0;
+  saveBalance(balance);
+
+  redeemOverlay.classList.remove('show');
+  renderJars();
+  renderStatCards();
+  renderChart();
+});
+
+/* ============ EFFORT CHART ============ */
+
+let effortChart = null;
+
+function weekKey(ts){
+  const d = new Date(ts);
+  const onejan = new Date(d.getFullYear(),0,1);
+  const week = Math.ceil((((d - onejan) / 86400000) + onejan.getDay()+1)/7);
+  return `${d.getFullYear()}-W${week}`;
+}
+
+function renderChart(){
+  const weeks = [];
+  const now = Date.now();
+  for(let i=7;i>=0;i--){
+    weeks.push(weekKey(now - i*7*86400000));
+  }
+
+  const datasets = CATEGORIES.map(cat => {
+    const data = weeks.map(wk => {
+      return history
+        .filter(h => h.action==='earn' && h.color===cat.key && weekKey(h.ts)===wk)
+        .reduce((s,h)=> s + h.stars, 0);
+    });
+    return {
+      label: cat.name,
+      data,
+      backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--c-'+cat.key).trim()
+    };
+  });
+
+  const ctx = document.getElementById('effortChart').getContext('2d');
+  if(effortChart) effortChart.destroy();
+  effortChart = new Chart(ctx, {
+    type:'bar',
+    data:{ labels: weeks.map((w,i)=> i===weeks.length-1 ? 'Цей тиждень' : w.split('-W')[1]+' тижд.'), datasets },
+    options:{
+      responsive:true,
+      plugins:{ legend:{ position:'bottom', labels:{ boxWidth:12, font:{size:11} } } },
+      scales:{ x:{ stacked:true, grid:{display:false} }, y:{ stacked:true, beginAtZero:true, ticks:{precision:0} } }
+    }
+  });
+
+  const totals = {};
+  CATEGORIES.forEach(c => totals[c.key] = 0);
+  history.forEach(h => { if(h.action==='earn') totals[h.color] = (totals[h.color]||0) + h.stars; });
+  let bestKey = null, bestVal = -1;
+  Object.entries(totals).forEach(([k,v])=>{ if(v>bestVal){ bestVal=v; bestKey=k; } });
+  const bestCat = CATEGORIES.find(c=>c.key===bestKey);
+  document.getElementById('bestLine').textContent = bestCat && bestVal > 0
+    ? `Найкраще виходить збирати: ${bestCat.emoji} ${bestCat.name} (усього ${bestVal} зірочок за весь час)`
+    : 'Ще замало даних для висновків — впиши більше кодів!';
+}
+
+/* ============ PARENT DAILY PANEL ============ */
+
+const parentPanelOverlay = document.getElementById('parentPanelOverlay');
+let ppState = {}; // key -> value (0/1 for fixed, 0/1/2 for scale)
+
+function openParentPanel(){
+  ppState = {};
+  DAILY_ACTIONS.forEach(a => ppState[a.key] = 0);
+  PENALTY_ACTIONS.forEach(p => ppState[p.key] = 0);
+  document.getElementById('ppResult').classList.remove('show');
+  document.getElementById('ppCode').textContent = '—';
+  document.getElementById('ppBreakdown').textContent = '';
+  renderPPActions();
+  parentPanelOverlay.classList.add('show');
+}
+
+function renderPPActions(){
+  const wrap = document.getElementById('ppActions');
+  wrap.innerHTML = '';
+  DAILY_ACTIONS.forEach(a => {
+    const row = document.createElement('div');
+    row.className = 'pp-action';
+    if(a.type === 'fixed'){
+      row.innerHTML = `
+        <label>
+          <input type="checkbox" data-key="${a.key}">
+          <span>${a.emoji} ${a.label}</span>
+        </label>
+        <span>+${a.stars}⭐</span>`;
+      wrap.appendChild(row);
+      row.querySelector('input').addEventListener('change', e => {
+        ppState[a.key] = e.target.checked ? a.stars : 0;
+      });
+    } else {
+      row.innerHTML = `
+        <span>${a.emoji} ${a.label}</span>
+        <div class="pp-scale" data-key="${a.key}">
+          ${a.scaleLabels.map((lbl,i)=>`<button type="button" data-val="${i}" title="${lbl}">${i}</button>`).join('')}
+        </div>`;
+      wrap.appendChild(row);
+      row.querySelectorAll('.pp-scale button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const val = parseInt(btn.dataset.val, 10);
+          ppState[a.key] = val;
+          row.querySelectorAll('.pp-scale button').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+    }
+  });
+
+  const divider = document.createElement('div');
+  divider.className = 'pp-penalty-divider';
+  divider.textContent = 'Мінусові бали';
+  wrap.appendChild(divider);
+
+  PENALTY_ACTIONS.forEach(p => {
+    const row = document.createElement('div');
+    row.className = 'pp-action pp-penalty';
+    const colorNames = Object.keys(p.penalty).map(key => {
+      const cat = CATEGORIES.find(c => c.key === key);
+      return cat ? cat.name : key;
+    }).join(' і ');
+    row.innerHTML = `
+      <label>
+        <input type="checkbox" data-key="${p.key}">
+        <span>${p.emoji} ${p.label}</span>
+      </label>
+      <span>−1⭐ (${colorNames})</span>`;
+    wrap.appendChild(row);
+    row.querySelector('input').addEventListener('change', e => {
+      ppState[p.key] = e.target.checked ? 1 : 0;
+    });
+  });
+}
+
+document.getElementById('ppGenerate').addEventListener('click', () => {
+  const distribution = {};
+  let total = 0;
+  DAILY_ACTIONS.forEach(a => {
+    const val = ppState[a.key] || 0;
+    if(val > 0){
+      distribution[a.color] = (distribution[a.color] || 0) + val;
+      total += val;
+      distribution[BONUS_COLOR] = (distribution[BONUS_COLOR] || 0) + 1; // meta jar grows from any completed action
+    }
+  });
+
+  let penaltyApplied = false;
+  PENALTY_ACTIONS.forEach(p => {
+    if(ppState[p.key]){
+      penaltyApplied = true;
+      Object.entries(p.penalty).forEach(([color, delta]) => {
+        distribution[color] = (distribution[color] || 0) + delta;
+      });
+    }
+  });
+
+  if(total === 0 && !penaltyApplied){
+    document.getElementById('ppBreakdown').textContent = 'Познач хоча б одну виконану дію.';
+    document.getElementById('ppResult').classList.add('show');
+    document.getElementById('ppCode').textContent = '—';
+    return;
+  }
+
+  const code = encodeDailyCode(distribution);
+
+  document.getElementById('ppCode').textContent = code;
+  const parts = Object.entries(distribution)
+    .filter(([, stars]) => stars !== 0)
+    .map(([color, stars]) => {
+      const cat = CATEGORIES.find(c => c.key === color);
+      const sign = stars > 0 ? '+' : '';
+      return `${cat.emoji} ${cat.name}: ${sign}${stars}`;
+    });
+  document.getElementById('ppBreakdown').innerHTML = parts.join('<br>');
+  document.getElementById('ppResult').classList.add('show');
+});
+
+document.getElementById('ppCancel').addEventListener('click', () => parentPanelOverlay.classList.remove('show'));
+
+/* ============ ROLE SELECT + CHILD ENTRY PUZZLE ============ */
+
+const landingScreen = document.getElementById('landingScreen');
+const puzzleOverlay = document.getElementById('puzzleOverlay');
+const mainApp = document.getElementById('mainApp');
+
+function revealMainApp(){
+  landingScreen.style.display = 'none';
+  puzzleOverlay.classList.remove('show');
+  mainApp.classList.remove('hidden-app');
+}
+
+document.getElementById('roleParentBtn').addEventListener('click', openPinForRoleParent);
+document.getElementById('roleChildBtn').addEventListener('click', () => {
+  landingScreen.style.display = 'none';
+  puzzleOverlay.classList.add('show');
+  startEntryPuzzle();
+});
+
+/* A tap-in-order puzzle: 4-6 numbered stars scattered at random spots,
+   child taps them from smallest to largest. Position + star count are
+   randomised on every open, so effectively there are far more than
+   20-30 possible layouts — never quite the same puzzle twice. */
+function startEntryPuzzle(){
+  const area = document.getElementById('puzzleArea');
+  area.innerHTML = '';
+  const count = 4 + Math.floor(Math.random()*3); // 4..6 stars
+  const order = Array.from({length:count}, (_,i)=> i+1);
+
+  // random non-overlapping-ish positions on a grid, then shuffled
+  const cellsX = 3, cellsY = 2;
+  const cells = [];
+  for(let y=0;y<cellsY;y++) for(let x=0;x<cellsX;x++) cells.push({x,y});
+  cells.sort(()=> Math.random()-0.5);
+
+  let next = 1;
+  order.forEach((num, i) => {
+    const cell = cells[i];
+    const left = 8 + cell.x * 30 + Math.random()*6;
+    const top = 12 + cell.y * 42 + Math.random()*10;
+    const btn = document.createElement('button');
+    btn.className = 'puzzle-star';
+    btn.textContent = num;
+    btn.style.left = left + '%';
+    btn.style.top = top + '%';
+    btn.addEventListener('click', () => {
+      if(num === next){
+        btn.classList.add('done');
+        next++;
+        if(next > count){
+          document.getElementById('puzzleHint').textContent = 'Супер! Заходимо ✨';
+          setTimeout(revealMainApp, 700);
+        }
+      } else {
+        btn.classList.add('wrong');
+        setTimeout(()=> btn.classList.remove('wrong'), 350);
+      }
+    });
+    area.appendChild(btn);
+  });
+
+  document.getElementById('puzzleHint').textContent = `Натисни на зірочки по порядку від 1 до ${count}`;
+}
+</script>
+</body>
+</html>
