@@ -225,7 +225,7 @@
   }
 
   /* parent panel */
-  .pp-modal{max-width:480px; text-align:left;}
+  .pp-modal{max-width:480px; text-align:left; max-height:88vh; overflow-y:auto;}
   .pp-action{
     display:flex; align-items:center; justify-content:space-between;
     padding:10px 0; border-bottom:1px solid #EEE3C9;
@@ -415,6 +415,7 @@
   .sv-jar-name{ font-size:11px; color:#9aa0cf; margin:4px 0 2px; font-weight:700; }
   .sv-jar-num{ font-family:'Baloo 2', sans-serif; font-weight:800; font-size:16px; color:var(--sv-accent, var(--gold)); }
   .sv-jar-sub{ font-size:9.5px; color:#7d84ba; margin-top:1px; }
+  .sv-jar-cadence{ font-size:9px; color:#9aa0cf; margin-top:2px; font-weight:700; }
   .sv-jar-progress{ height:6px; background:rgba(255,255,255,.1); border-radius:999px; margin-top:7px; overflow:hidden; }
   .sv-jar-progress-fill{ height:100%; width:0%; background:var(--sv-accent, var(--gold)); border-radius:999px; transition:width .8s cubic-bezier(.2,.8,.3,1); }
   .sv-jar-redeem{
@@ -556,6 +557,7 @@
   <div class="stats-gate">
     <button id="openStats">🔒 Подивитись статистику</button>
     <button id="openParentPanel" class="parent-btn">🔑 Панель батьків</button>
+    <button id="switchRoleBtn" class="parent-btn">↩️ Інший користувач</button>
   </div>
 
   <div id="statsPanel">
@@ -620,6 +622,12 @@
   <div class="modal">
     <h3 id="redeemTitle">Видати</h3>
     <p id="redeemBody" style="font-size:15px; color:var(--ink-soft);"></p>
+    <div style="margin:14px 0; text-align:left;">
+      <label style="font-size:13px; color:var(--ink-soft); display:block; margin-bottom:6px;">Скільки видати?</label>
+      <input type="number" id="redeemAmountInput" min="0" step="1"
+        style="width:100%; box-sizing:border-box; padding:11px; border-radius:10px; border:2px solid #E7DCC2; font-family:'Baloo 2', sans-serif; font-size:18px; text-align:center;">
+      <div id="redeemAmountHint" style="font-size:12px; color:var(--ink-soft); margin-top:6px;"></div>
+    </div>
     <div class="btn-row">
       <button class="btn-secondary" id="redeemCancel">Скасувати</button>
       <button class="btn-primary" id="redeemConfirm">Так, видано</button>
@@ -1346,12 +1354,22 @@ function buildJarsOverviewCard(){
   const tilesHtml = CATEGORIES.map(cat => {
     const stars = balance[cat.key] || 0;
     const progressPct = Math.min(1, stars / cat.capStars);
+    let cadenceLine;
+    if(cat.cadence === 'deadline'){
+      const dl = daysLeft(cat.deadline);
+      cadenceLine = dl > 0 ? `⏳ ${dl} дн. до ${cat.deadline.split('-').reverse().join('.')}` : '🎉 Дата настала!';
+    } else if(cat.cadence === 'monthly'){
+      cadenceLine = 'раз/місяць';
+    } else {
+      cadenceLine = 'щотижня';
+    }
     return `
       <div class="sv-jar-tile" style="--sv-accent:${cat.color}">
         <span class="sv-jar-emoji">${cat.emoji}</span>
         <div class="sv-jar-name">${cat.name}</div>
         <div class="sv-jar-num" data-target="${stars}" data-catkey="${cat.key}">0</div>
         <div class="sv-jar-sub">зірочок: ${stars}</div>
+        <div class="sv-jar-cadence">${cadenceLine}</div>
         <div class="sv-jar-progress"><div class="sv-jar-progress-fill" data-pct="${progressPct*100}"></div></div>
         <button class="sv-jar-redeem" data-key="${cat.key}">Видано</button>
       </div>
@@ -1486,6 +1504,13 @@ document.getElementById('pinOk').addEventListener('click', () => {
 });
 
 document.getElementById('openParentPanel').addEventListener('click', openPinForParentPanel);
+document.getElementById('switchRoleBtn').addEventListener('click', () => {
+  document.getElementById('statsPanel').classList.remove('show');
+  parentPanelOverlay.classList.remove('show');
+  document.getElementById('mainApp').classList.add('hidden-app');
+  document.getElementById('landingScreen').style.display = 'flex';
+  statsUnlocked = false; // re-lock stats behind the riddle when switching users
+});
 document.getElementById('ppExpandFull').addEventListener('click', () => {
   parentPanelOverlay.classList.remove('show');
   document.getElementById('mainApp').classList.remove('hidden-app');
@@ -1494,10 +1519,31 @@ document.getElementById('ppExpandFull').addEventListener('click', () => {
 function openRedeemConfirm(key){
   const cat = CATEGORIES.find(c => c.key === key);
   const stars = balance[key] || 0;
+  const maxAmount = stars * cat.valuePerStar;
+  const unitText = cat.unit === 'minutes' ? 'хв' : 'грн';
+
   document.getElementById('redeemTitle').textContent = `Видати: ${cat.name}`;
   document.getElementById('redeemBody').textContent =
-    `Накопичено ${fmtAmount(cat, stars)} (${stars} зірочок). Підтвердити видачу і обнулити лічильник?`;
+    `Накопичено ${fmtAmount(cat, stars)} (${stars} зірочок). Можеш видати все або частину.`;
+
+  const input = document.getElementById('redeemAmountInput');
+  const hint = document.getElementById('redeemAmountHint');
+  input.value = maxAmount;
+  input.max = maxAmount;
+  input.min = 0;
+
+  function updateHint(){
+    let entered = parseFloat(input.value);
+    if(isNaN(entered) || entered < 0) entered = 0;
+    if(entered > maxAmount) entered = maxAmount;
+    const starsForAmount = Math.min(stars, Math.max(0, Math.round(entered / cat.valuePerStar)));
+    hint.textContent = `з максимум ${maxAmount} ${unitText} · ≈ ${starsForAmount} ${starsForAmount === 1 ? 'зірочка' : 'зірочок'}`;
+  }
+  input.oninput = updateHint;
+  updateHint();
+
   redeemOverlay.dataset.key = key;
+  redeemOverlay.dataset.maxAmount = maxAmount;
   redeemOverlay.classList.add('show');
 }
 
@@ -1506,17 +1552,29 @@ document.getElementById('redeemCancel').addEventListener('click', ()=> redeemOve
 document.getElementById('redeemConfirm').addEventListener('click', () => {
   const key = redeemOverlay.dataset.key;
   const cat = CATEGORIES.find(c => c.key === key);
-  const stars = balance[key] || 0;
-  const amount = fmtAmount(cat, stars);
+  const starsAvailable = balance[key] || 0;
+  const maxAmount = parseFloat(redeemOverlay.dataset.maxAmount) || 0;
 
-  history.push({ ts: Date.now(), action:'redeem', color:key, stars, amount });
+  const input = document.getElementById('redeemAmountInput');
+  let entered = parseFloat(input.value);
+  if(isNaN(entered) || entered < 0) entered = 0;
+  if(entered > maxAmount) entered = maxAmount;
+
+  let starsToRedeem = Math.round(entered / cat.valuePerStar);
+  starsToRedeem = Math.min(starsAvailable, Math.max(0, starsToRedeem));
+  if(starsToRedeem <= 0){ redeemOverlay.classList.remove('show'); return; }
+
+  const amount = fmtAmount(cat, starsToRedeem);
+  const isPartial = starsToRedeem < starsAvailable;
+
+  history.push({ ts: Date.now(), action:'redeem', color:key, stars:starsToRedeem, amount });
   saveHistory(history);
   sendToSheet({
-    action:'redeem', color:key, category:cat.name, code:'', stars,
-    unit:cat.unit, valuePerStar:cat.valuePerStar||'', amount, note:'видано батьками'
+    action:'redeem', color:key, category:cat.name, code:'', stars:starsToRedeem,
+    unit:cat.unit, valuePerStar:cat.valuePerStar||'', amount, note: isPartial ? 'видано частково' : 'видано батьками'
   });
 
-  balance[key] = 0;
+  balance[key] = starsAvailable - starsToRedeem;
   saveBalance(balance);
 
   redeemOverlay.classList.remove('show');
@@ -1666,7 +1724,10 @@ document.getElementById('ppGenerate').addEventListener('click', () => {
   document.getElementById('ppResult').classList.add('show');
 });
 
-document.getElementById('ppCancel').addEventListener('click', () => parentPanelOverlay.classList.remove('show'));
+document.getElementById('ppCancel').addEventListener('click', () => {
+  parentPanelOverlay.classList.remove('show');
+  document.getElementById('mainApp').classList.remove('hidden-app');
+});
 
 /* ============ ROLE SELECT + CHILD ENTRY PUZZLE ============ */
 
